@@ -1,0 +1,24 @@
+.ui-data-table {
+  border-collapse: collapse;
+  color: var(--ui-color-gray-900);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  width: 100%;
+}
+
+.ui-data-table caption {
+  color: var(--ui-color-gray-700);
+  margin-bottom: var(--ui-spacing-sm);
+  text-align: left;
+}
+
+.ui-data-table th,
+.ui-data-table td {
+  border-bottom: 1px solid var(--ui-color-gray-200);
+  padding: var(--ui-spacing-sm) var(--ui-spacing-md);
+  text-align: left;
+}
+
+.ui-data-table th {
+  font-weight: var(--ui-font-weight-semibold);
+}

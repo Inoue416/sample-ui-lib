@@ -1,0 +1,28 @@
+.ui-app-shell {
+  background: var(--ui-color-white);
+  color: var(--ui-color-gray-900);
+  display: grid;
+  font-family: var(--ui-font-family);
+  min-height: 100%;
+}
+
+.ui-app-shell__header {
+  border-bottom: 1px solid var(--ui-color-gray-200);
+  padding: var(--ui-spacing-md);
+}
+
+.ui-app-shell__body {
+  display: grid;
+  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  min-height: 0;
+}
+
+.ui-app-shell__sidebar {
+  border-right: 1px solid var(--ui-color-gray-200);
+  padding: var(--ui-spacing-md);
+}
+
+.ui-app-shell__main {
+  min-width: 0;
+  padding: var(--ui-spacing-md);
+}

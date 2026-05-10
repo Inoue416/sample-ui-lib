@@ -1,0 +1,10 @@
+.ui-search-combobox {
+  align-items: center;
+  display: flex;
+  gap: var(--ui-spacing-sm);
+  width: 100%;
+}
+
+.ui-search-combobox .ui-input {
+  min-width: 0;
+}

@@ -1,0 +1,53 @@
+.ui-dialog__backdrop {
+  background: rgb(15 23 42 / 45%);
+  inset: 0;
+  position: fixed;
+  z-index: var(--ui-z-index-overlay);
+}
+
+.ui-dialog__popup {
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-lg);
+  box-shadow: var(--ui-shadow-lg);
+  color: var(--ui-color-gray-900);
+  left: 50%;
+  max-width: min(32rem, calc(100vw - 2rem));
+  padding: var(--ui-spacing-lg);
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: var(--ui-z-index-modal);
+}
+
+.ui-dialog__title {
+  font-size: var(--ui-font-size-lg);
+  font-weight: var(--ui-font-weight-bold);
+  line-height: var(--ui-line-height-tight);
+  margin: 0;
+}
+
+.ui-dialog__description {
+  color: var(--ui-color-gray-700);
+  font-size: var(--ui-font-size-md);
+  line-height: var(--ui-line-height-normal);
+  margin: var(--ui-spacing-sm) 0 0;
+}
+
+.ui-dialog__close {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: var(--ui-radius-sm);
+  color: var(--ui-color-gray-700);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0 var(--ui-spacing-sm);
+}
+
+.ui-dialog__close:hover {
+  background: var(--ui-color-gray-100);
+}

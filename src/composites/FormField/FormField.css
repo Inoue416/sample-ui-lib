@@ -1,0 +1,28 @@
+.ui-form-field {
+  display: grid;
+  gap: var(--ui-spacing-xs);
+}
+
+.ui-form-field__label {
+  color: var(--ui-color-gray-900);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-medium);
+  line-height: var(--ui-line-height-tight);
+}
+
+.ui-form-field__control {
+  display: grid;
+}
+
+.ui-form-field__message {
+  color: var(--ui-color-gray-500);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  line-height: var(--ui-line-height-normal);
+  margin: 0;
+}
+
+.ui-form-field__message--error {
+  color: var(--ui-color-danger);
+}

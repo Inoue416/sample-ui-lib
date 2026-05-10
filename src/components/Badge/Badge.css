@@ -1,0 +1,30 @@
+.ui-badge {
+  align-items: center;
+  border-radius: var(--ui-radius-full);
+  display: inline-flex;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-medium);
+  line-height: var(--ui-line-height-tight);
+  padding: 0.125rem 0.5rem;
+}
+
+.ui-badge--neutral {
+  background: var(--ui-color-gray-100);
+  color: var(--ui-color-gray-700);
+}
+
+.ui-badge--primary {
+  background: rgb(37 99 235 / 12%);
+  color: var(--ui-color-primary);
+}
+
+.ui-badge--success {
+  background: var(--ui-color-success-surface);
+  color: var(--ui-color-success);
+}
+
+.ui-badge--danger {
+  background: var(--ui-color-danger-surface);
+  color: var(--ui-color-danger);
+}
