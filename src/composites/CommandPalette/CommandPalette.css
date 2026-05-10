@@ -1,0 +1,9 @@
+.ui-command-palette {
+  display: grid;
+  gap: var(--ui-spacing-md);
+}
+
+.ui-command-palette__content {
+  display: grid;
+  gap: var(--ui-spacing-xs);
+}

@@ -1,0 +1,8 @@
+.ui-card {
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-md);
+  box-shadow: var(--ui-shadow-sm);
+  color: var(--ui-color-gray-900);
+  padding: var(--ui-spacing-md);
+}

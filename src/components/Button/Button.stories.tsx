@@ -10,11 +10,11 @@ const meta = {
   argTypes: {
     variant: {
       control: 'radio',
-      options: ['primary', 'secondary'],
+      options: ['solid', 'outline', 'ghost'],
     },
     size: {
       control: 'radio',
-      options: ['sm', 'md'],
+      options: ['sm', 'md', 'lg'],
     },
     disabled: {
       control: 'boolean',
@@ -22,7 +22,7 @@ const meta = {
   },
   args: {
     children: 'Button',
-    variant: 'primary',
+    variant: 'solid',
     size: 'md',
     disabled: false,
   },
@@ -33,13 +33,19 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    variant: 'primary',
+    variant: 'solid',
   },
 }
 
-export const Secondary: Story = {
+export const Outline: Story = {
   args: {
-    variant: 'secondary',
+    variant: 'outline',
+  },
+}
+
+export const Ghost: Story = {
+  args: {
+    variant: 'ghost',
   },
 }
 
@@ -58,8 +64,9 @@ export const Disabled: Story = {
 export const Variants: Story = {
   render: () => (
     <div style={{ display: 'flex', gap: '0.75rem' }}>
-      <Button variant='primary'>Primary</Button>
-      <Button variant='secondary'>Secondary</Button>
+      <Button variant='solid'>Solid</Button>
+      <Button variant='outline'>Outline</Button>
+      <Button variant='ghost'>Ghost</Button>
     </div>
   ),
 }
@@ -69,6 +76,7 @@ export const Sizes: Story = {
     <div style={{ alignItems: 'center', display: 'flex', gap: '0.75rem' }}>
       <Button size='sm'>Small</Button>
       <Button size='md'>Medium</Button>
+      <Button size='lg'>Large</Button>
     </div>
   ),
 }

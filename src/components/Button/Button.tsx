@@ -1,29 +1,42 @@
-import type { ButtonHTMLAttributes } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
+import { forwardRef } from 'react'
+import { cn } from '../../utils'
 import './Button.css'
 
-export type ButtonVariant = 'primary' | 'secondary'
-export type ButtonSize = 'sm' | 'md'
+export type ButtonVariant = 'solid' | 'outline' | 'ghost'
+export type ButtonSize = 'sm' | 'md' | 'lg'
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export type ButtonProps = ComponentPropsWithoutRef<'button'> & {
   variant?: ButtonVariant
   size?: ButtonSize
 }
 
-export function Button({
-  variant = 'primary',
-  size = 'md',
-  className,
-  type = 'button',
-  ...props
-}: ButtonProps) {
-  const classes = [
-    'sul-button',
-    `sul-button--${variant}`,
-    `sul-button--${size}`,
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ')
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      variant = 'solid',
+      size = 'md',
+      className,
+      type = 'button',
+      children,
+      ...props
+    },
+    ref,
+  ) => (
+    <button
+      ref={ref}
+      type={type}
+      className={cn(
+        'ui-button',
+        `ui-button--${variant}`,
+        `ui-button--${size}`,
+        className,
+      )}
+      {...props}
+    >
+      {children}
+    </button>
+  ),
+)
 
-  return <button type={type} className={classes} {...props} />
-}
+Button.displayName = 'Button'

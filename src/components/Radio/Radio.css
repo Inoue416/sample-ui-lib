@@ -1,0 +1,36 @@
+.ui-radio__label {
+  align-items: center;
+  color: var(--ui-color-gray-900);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-md);
+  gap: var(--ui-spacing-sm);
+}
+
+.ui-radio {
+  align-items: center;
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-300);
+  border-radius: var(--ui-radius-full);
+  display: inline-flex;
+  height: 1rem;
+  justify-content: center;
+  width: 1rem;
+}
+
+.ui-radio[data-checked] {
+  border-color: var(--ui-color-primary);
+}
+
+.ui-radio:focus-visible {
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 16%);
+  outline: none;
+}
+
+.ui-radio__indicator {
+  background: var(--ui-color-primary);
+  border-radius: var(--ui-radius-full);
+  height: 0.5rem;
+  width: 0.5rem;
+}
