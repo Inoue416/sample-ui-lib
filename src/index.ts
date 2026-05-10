@@ -2,5 +2,5 @@ export type {
   ButtonProps,
   ButtonSize,
   ButtonVariant,
-} from './components/Button'
-export { Button } from './components/Button'
+} from './components/Button/Button'
+export { Button } from './components/Button/Button'

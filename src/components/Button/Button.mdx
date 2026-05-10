@@ -1,0 +1,15 @@
+import { Canvas, Controls, Meta, Stories } from '@storybook/addon-docs/blocks'
+import * as ButtonStories from './Button.stories'
+
+<Meta of={ButtonStories} />
+
+# Button
+
+The Button component renders a native button with library-provided variants and
+sizes while preserving standard button attributes.
+
+<Canvas of={ButtonStories.Primary} />
+
+<Controls of={ButtonStories.Primary} />
+
+<Stories />
