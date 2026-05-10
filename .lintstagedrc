@@ -1,0 +1,17 @@
+{
+  "src/**/*.{ts,tsx}": [
+    "oxlint --fix",
+    "biome format --write --no-errors-on-unmatched"
+  ],
+  "src/**/*.stories.{ts,tsx,mdx}": [
+    "oxlint --fix",
+    "biome format --write --no-errors-on-unmatched"
+  ],
+  ".storybook/**/*.{js,jsx,ts,tsx,json,jsonc,md,mdx}": [
+    "oxlint --fix",
+    "biome format --write --no-errors-on-unmatched"
+  ],
+  "*.{json,jsonc,md,mdx,yml,yaml,css,scss}": [
+    "biome format --write --no-errors-on-unmatched"
+  ]
+}
