@@ -24,6 +24,12 @@ pnpm check
 
 `pnpm check` runs lint, formatting/import-order verification, and the production library build.
 
+## Storybook
+
+Storybook can be run locally with `pnpm storybook` and statically built with `pnpm build-storybook`.
+
+When changes are merged to `main`, the `Deploy Storybook` GitHub Actions workflow runs `pnpm test:storybook`, builds Storybook, and deploys the generated site to GitHub Pages. After GitHub Pages is configured to use GitHub Actions as its source, the public URL is normally `https://<owner>.github.io/sample-ui-lib/`.
+
 ## Publishing Shape
 
 The package exports the compiled library entry from `dist/` and a generated stylesheet entry:
