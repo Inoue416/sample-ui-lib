@@ -11,7 +11,10 @@
       "import": "./dist/sample-ui-lib.js",
       "require": "./dist/sample-ui-lib.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./style.css": {
+      "types": "./dist/style.css.d.ts",
+      "default": "./dist/style.css"
+    }
   },
   "files": [
     "dist"
@@ -20,12 +23,12 @@
     "**/*.css"
   ],
   "scripts": {
-    "build": "vite build && tsc -b tsconfig.lib.json --force",
+    "build": "vite build && tsc -b tsconfig.lib.json --force && node scripts/generate-css-declarations.mjs",
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
     "format": "biome check --write .",
     "format:check": "biome ci .",
-    "check": "oxlint . && biome ci . && vite build && tsc -b tsconfig.lib.json --force",
+    "check": "oxlint . && biome ci . && vite build && tsc -b tsconfig.lib.json --force && node scripts/generate-css-declarations.mjs",
     "test": "vitest run --project unit",
     "test:storybook": "vitest run --project storybook",
     "storybook": "storybook dev -p 6006",
