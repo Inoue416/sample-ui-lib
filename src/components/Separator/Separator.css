@@ -1,0 +1,15 @@
+.ui-separator {
+  background: var(--ui-color-gray-200);
+  flex: none;
+}
+
+.ui-separator--horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+.ui-separator--vertical {
+  align-self: stretch;
+  min-height: 1rem;
+  width: 1px;
+}

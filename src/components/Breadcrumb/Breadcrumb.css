@@ -1,0 +1,29 @@
+.ui-breadcrumb ol {
+  align-items: center;
+  color: var(--ui-color-gray-500);
+  display: flex;
+  gap: var(--ui-spacing-sm);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-breadcrumb li {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--ui-spacing-sm);
+}
+
+.ui-breadcrumb li + li::before {
+  color: var(--ui-color-gray-300);
+  content: "/";
+}
+
+.ui-breadcrumb a {
+  color: var(--ui-color-primary);
+}
+
+.ui-breadcrumb [aria-current="page"] {
+  color: var(--ui-color-gray-900);
+  font-weight: var(--ui-font-weight-semibold);
+}

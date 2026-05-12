@@ -1,0 +1,5 @@
+.ui-slider {
+  accent-color: var(--ui-color-primary);
+  cursor: pointer;
+  width: 100%;
+}

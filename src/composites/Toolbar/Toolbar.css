@@ -1,0 +1,8 @@
+.ui-toolbar {
+  align-items: center;
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-md);
+  display: inline-flex;
+  gap: var(--ui-spacing-xs);
+  padding: var(--ui-spacing-xs);
+}

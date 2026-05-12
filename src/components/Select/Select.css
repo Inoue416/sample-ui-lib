@@ -1,0 +1,50 @@
+.ui-select__trigger {
+  align-items: center;
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-300);
+  border-radius: var(--ui-radius-md);
+  color: var(--ui-color-gray-900);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--ui-font-family);
+  gap: var(--ui-spacing-sm);
+  justify-content: space-between;
+  min-height: 2.5rem;
+  min-width: 14rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.ui-select__trigger:focus-visible {
+  border-color: var(--ui-color-primary);
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 16%);
+  outline: none;
+}
+
+.ui-select__popup {
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-md);
+  box-shadow: var(--ui-shadow-md);
+  min-width: 14rem;
+  padding: var(--ui-spacing-xs);
+  z-index: var(--ui-z-index-dropdown);
+}
+
+.ui-select__list {
+  display: grid;
+  gap: 2px;
+}
+
+.ui-select__item {
+  align-items: center;
+  border-radius: var(--ui-radius-sm);
+  cursor: pointer;
+  display: flex;
+  gap: var(--ui-spacing-sm);
+  justify-content: space-between;
+  padding: 0.625rem 0.75rem;
+}
+
+.ui-select__item[data-highlighted] {
+  background: var(--ui-color-gray-100);
+}

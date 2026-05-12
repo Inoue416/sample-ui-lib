@@ -1,0 +1,27 @@
+.ui-empty-state {
+  align-items: center;
+  border: 1px dashed var(--ui-color-gray-300);
+  border-radius: var(--ui-radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-sm);
+  justify-content: center;
+  padding: var(--ui-spacing-xl);
+  text-align: center;
+}
+
+.ui-empty-state__icon {
+  color: var(--ui-color-gray-500);
+}
+
+.ui-empty-state__title {
+  color: var(--ui-color-gray-900);
+  font-size: var(--ui-font-size-lg);
+  margin: 0;
+}
+
+.ui-empty-state__description {
+  color: var(--ui-color-gray-500);
+  margin: 0;
+  max-width: 32rem;
+}

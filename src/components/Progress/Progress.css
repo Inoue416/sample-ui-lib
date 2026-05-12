@@ -1,0 +1,14 @@
+.ui-progress {
+  background: var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-full);
+  height: 0.75rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ui-progress__indicator {
+  background: var(--ui-color-primary);
+  display: block;
+  height: 100%;
+  transition: width var(--ui-duration-base) var(--ui-easing-standard);
+}

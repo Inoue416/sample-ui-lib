@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { cloneElement, isValidElement, useId } from 'react'
-import { cn } from '../../utils'
+import { FieldMessage, FormLabel } from '../../components'
 import './FormField.css'
 
 export type FormFieldProps = {
@@ -40,20 +40,18 @@ export function FormField({
 
   return (
     <div className='ui-form-field'>
-      <label className='ui-form-field__label' htmlFor={fieldId}>
+      <FormLabel className='ui-form-field__label' htmlFor={fieldId}>
         {label}
-      </label>
+      </FormLabel>
       <div className='ui-form-field__control'>{control}</div>
       {message ? (
-        <p
+        <FieldMessage
           id={messageId}
-          className={cn(
-            'ui-form-field__message',
-            error && 'ui-form-field__message--error',
-          )}
+          className='ui-form-field__message'
+          tone={error ? 'danger' : 'default'}
         >
           {message}
-        </p>
+        </FieldMessage>
       ) : null}
     </div>
   )

@@ -1,0 +1,20 @@
+.ui-link {
+  color: var(--ui-color-primary);
+  font-family: var(--ui-font-family);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.ui-link:hover {
+  color: var(--ui-color-primary-hover);
+}
+
+.ui-link:focus-visible {
+  border-radius: var(--ui-radius-sm);
+  outline: 2px solid var(--ui-color-primary);
+  outline-offset: 2px;
+}
+
+.ui-link--muted {
+  color: var(--ui-color-gray-700);
+}

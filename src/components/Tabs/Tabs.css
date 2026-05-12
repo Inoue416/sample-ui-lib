@@ -1,0 +1,27 @@
+.ui-tabs {
+  display: grid;
+  gap: var(--ui-spacing-md);
+}
+
+.ui-tabs__list {
+  border-bottom: 1px solid var(--ui-color-gray-200);
+  display: inline-flex;
+  gap: var(--ui-spacing-xs);
+}
+
+.ui-tabs__tab {
+  background: transparent;
+  border: 0;
+  color: var(--ui-color-gray-500);
+  cursor: pointer;
+  font-weight: var(--ui-font-weight-semibold);
+  padding: 0.75rem 1rem;
+}
+
+.ui-tabs__tab[data-selected] {
+  color: var(--ui-color-primary);
+}
+
+.ui-tabs__panel {
+  color: var(--ui-color-gray-900);
+}

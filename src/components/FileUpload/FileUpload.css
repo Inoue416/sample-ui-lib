@@ -1,0 +1,9 @@
+.ui-file-upload {
+  border: 1px dashed var(--ui-color-gray-300);
+  border-radius: var(--ui-radius-md);
+  color: var(--ui-color-gray-700);
+  cursor: pointer;
+  font-family: var(--ui-font-family);
+  padding: 0.75rem;
+  width: 100%;
+}

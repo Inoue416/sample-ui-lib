@@ -1,0 +1,19 @@
+.ui-table {
+  border-collapse: collapse;
+  color: var(--ui-color-gray-900);
+  font-family: var(--ui-font-family);
+  width: 100%;
+}
+
+.ui-table th,
+.ui-table td {
+  border-bottom: 1px solid var(--ui-color-gray-200);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.ui-table th {
+  color: var(--ui-color-gray-700);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-semibold);
+}

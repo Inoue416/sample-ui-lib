@@ -1,0 +1,20 @@
+.ui-modal-form {
+  width: min(32rem, calc(100vw - 2rem));
+}
+
+.ui-modal-form__form {
+  display: grid;
+  gap: var(--ui-spacing-lg);
+}
+
+.ui-modal-form__header,
+.ui-modal-form__body {
+  display: grid;
+  gap: var(--ui-spacing-sm);
+}
+
+.ui-modal-form__footer {
+  display: flex;
+  gap: var(--ui-spacing-sm);
+  justify-content: flex-end;
+}

@@ -1,0 +1,32 @@
+.ui-timeline {
+  display: grid;
+  gap: var(--ui-spacing-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-timeline__item {
+  display: grid;
+  gap: var(--ui-spacing-sm);
+  grid-template-columns: auto 1fr;
+  position: relative;
+}
+
+.ui-timeline__marker {
+  background: var(--ui-color-primary);
+  border-radius: var(--ui-radius-full);
+  height: 0.75rem;
+  margin-top: 0.35rem;
+  width: 0.75rem;
+}
+
+.ui-timeline__title {
+  color: var(--ui-color-gray-900);
+  display: block;
+  margin-bottom: var(--ui-spacing-xs);
+}
+
+.ui-timeline__content {
+  color: var(--ui-color-gray-500);
+}

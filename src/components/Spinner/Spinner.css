@@ -1,0 +1,28 @@
+.ui-spinner {
+  animation: ui-spinner-rotate 0.8s linear infinite;
+  border: 2px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-full);
+  border-top-color: var(--ui-color-primary);
+  display: inline-block;
+}
+
+.ui-spinner--sm {
+  height: 1rem;
+  width: 1rem;
+}
+
+.ui-spinner--md {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.ui-spinner--lg {
+  height: 2rem;
+  width: 2rem;
+}
+
+@keyframes ui-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

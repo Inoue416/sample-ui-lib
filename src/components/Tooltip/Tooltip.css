@@ -1,0 +1,8 @@
+.ui-tooltip__popup {
+  background: var(--ui-color-gray-900);
+  border-radius: var(--ui-radius-sm);
+  color: var(--ui-color-white);
+  font-size: var(--ui-font-size-sm);
+  padding: 0.5rem 0.625rem;
+  z-index: var(--ui-z-index-dropdown);
+}
