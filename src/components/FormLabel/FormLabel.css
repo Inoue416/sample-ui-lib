@@ -1,0 +1,14 @@
+.ui-form-label {
+  align-items: center;
+  color: var(--ui-color-gray-900);
+  display: inline-flex;
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-semibold);
+  gap: var(--ui-spacing-xs);
+  line-height: var(--ui-line-height-tight);
+}
+
+.ui-form-label__required {
+  color: var(--ui-color-danger);
+}

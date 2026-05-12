@@ -1,0 +1,27 @@
+.ui-description-list {
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-lg);
+  margin: 0;
+  overflow: hidden;
+}
+
+.ui-description-list__item {
+  display: grid;
+  gap: var(--ui-spacing-sm);
+  grid-template-columns: minmax(8rem, 12rem) 1fr;
+  padding: var(--ui-spacing-md);
+}
+
+.ui-description-list__item + .ui-description-list__item {
+  border-top: 1px solid var(--ui-color-gray-200);
+}
+
+.ui-description-list dt {
+  color: var(--ui-color-gray-500);
+  font-weight: var(--ui-font-weight-medium);
+}
+
+.ui-description-list dd {
+  color: var(--ui-color-gray-900);
+  margin: 0;
+}

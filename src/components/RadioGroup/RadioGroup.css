@@ -1,0 +1,16 @@
+.ui-radio-group__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-radio-group__fieldset legend {
+  color: var(--ui-color-gray-900);
+  font-weight: var(--ui-font-weight-semibold);
+  margin-bottom: var(--ui-spacing-sm);
+}
+
+.ui-radio-group {
+  display: grid;
+  gap: var(--ui-spacing-sm);
+}

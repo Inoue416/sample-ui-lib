@@ -1,0 +1,21 @@
+.ui-dropdown-menu__popup {
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-md);
+  box-shadow: var(--ui-shadow-md);
+  display: grid;
+  gap: 2px;
+  min-width: 12rem;
+  padding: var(--ui-spacing-xs);
+  z-index: var(--ui-z-index-dropdown);
+}
+
+.ui-dropdown-menu__item {
+  border-radius: var(--ui-radius-sm);
+  cursor: pointer;
+  padding: 0.625rem 0.75rem;
+}
+
+.ui-dropdown-menu__item[data-highlighted] {
+  background: var(--ui-color-gray-100);
+}

@@ -1,0 +1,15 @@
+.ui-field-message {
+  color: var(--ui-color-gray-500);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  line-height: var(--ui-line-height-normal);
+  margin: 0;
+}
+
+.ui-field-message--danger {
+  color: var(--ui-color-danger);
+}
+
+.ui-field-message--success {
+  color: var(--ui-color-success);
+}

@@ -1,0 +1,23 @@
+.ui-stat {
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-lg);
+  display: grid;
+  gap: var(--ui-spacing-xs);
+  padding: var(--ui-spacing-md);
+}
+
+.ui-stat__label,
+.ui-stat__helper {
+  color: var(--ui-color-gray-500);
+  margin: 0;
+}
+
+.ui-stat__label {
+  font-size: var(--ui-font-size-sm);
+}
+
+.ui-stat__value {
+  color: var(--ui-color-gray-900);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}

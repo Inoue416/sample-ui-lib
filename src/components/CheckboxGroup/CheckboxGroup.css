@@ -1,0 +1,18 @@
+.ui-checkbox-group {
+  border: 0;
+  display: grid;
+  gap: var(--ui-spacing-sm);
+  margin: 0;
+  padding: 0;
+}
+
+.ui-checkbox-group legend {
+  color: var(--ui-color-gray-900);
+  font-weight: var(--ui-font-weight-semibold);
+  margin-bottom: var(--ui-spacing-sm);
+}
+
+.ui-checkbox-group__options {
+  display: grid;
+  gap: var(--ui-spacing-sm);
+}

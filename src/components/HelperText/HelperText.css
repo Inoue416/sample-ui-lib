@@ -1,0 +1,7 @@
+.ui-helper-text {
+  color: var(--ui-color-gray-500);
+  font-family: var(--ui-font-family);
+  font-size: var(--ui-font-size-sm);
+  line-height: var(--ui-line-height-normal);
+  margin: 0;
+}

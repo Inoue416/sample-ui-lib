@@ -1,0 +1,22 @@
+.ui-popover__popup {
+  background: var(--ui-color-white);
+  border: 1px solid var(--ui-color-gray-200);
+  border-radius: var(--ui-radius-lg);
+  box-shadow: var(--ui-shadow-md);
+  display: grid;
+  gap: var(--ui-spacing-sm);
+  max-width: 20rem;
+  padding: var(--ui-spacing-md);
+  z-index: var(--ui-z-index-dropdown);
+}
+
+.ui-popover__title {
+  color: var(--ui-color-gray-900);
+  font-weight: var(--ui-font-weight-semibold);
+  margin: 0;
+}
+
+.ui-popover__description {
+  color: var(--ui-color-gray-500);
+  margin: 0;
+}

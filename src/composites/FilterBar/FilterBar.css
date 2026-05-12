@@ -1,0 +1,14 @@
+.ui-filter-bar {
+  align-items: center;
+  display: flex;
+  gap: var(--ui-spacing-md);
+  justify-content: space-between;
+}
+
+.ui-filter-bar__controls,
+.ui-filter-bar__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-sm);
+}
